@@ -1,4 +1,4 @@
-public class Perro extends Anmal {
+public class Perro extends Animal {
     private String raza;
     public Perro(String nombre,String raza) {
         super(nombre);
@@ -13,6 +13,11 @@ public class Perro extends Anmal {
     @Override
     public void sonido(){
         System.out.println(this.getNombre()+" dice GUAU");
+    }
+
+    @Override
+    public String imprimir(){
+        return super.imprimir() + ", Raza: " + this.raza;
     }
 
 }

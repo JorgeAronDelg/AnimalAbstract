@@ -1,8 +1,8 @@
-public abstract class Anmal {
+public abstract class Animal {
     protected String nombre;
 
-    public Anmal(String nombre){
-
+    public Animal(String nombre){
+        this.nombre = nombre;
     }
 
     public String getNombre() {
@@ -22,4 +22,8 @@ public abstract class Anmal {
     }
 
     public abstract void sonido();
+
+    public String imprimir(){
+        return "Nombre: " + this.nombre;
+    }
 }

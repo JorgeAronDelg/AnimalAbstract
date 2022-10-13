@@ -1,4 +1,4 @@
-public class Gato extends Anmal {
+public class Gato extends Animal {
         private String raza;
 
         public Gato(String nombre,String raza) {
